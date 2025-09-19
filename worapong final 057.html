@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;500;700&display=swap');
+
+        :root {
+            --bg: #f4f1ed;         /* ครีมอ่อน */
+            --primary: #8e735b;    /* น้ำตาลอ่อน */
+            --accent: #d6bfae;     /* เบจ */
+            --text: #333;          /* เทาเข้ม */
+            --light-text: #777;    /* เทาอ่อน */
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Prompt', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* ----------- Header ----------- */
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--accent);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* ----------- Section ----------- */
+        section {
+            padding: 4rem 2rem;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: var(--primary);
+        }
+
+        /* ----------- About ----------- */
+        .about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .about img {
+            width: 200px;
+            border-radius: 100%;
+            margin-bottom: 1rem;
+        }
+
+        /* ----------- Portfolio ----------- */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .portfolio-item {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .portfolio-item h3 {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+        }
+
+        /* ----------- Contact ----------- */
+        .contact {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--primary);
+            color: white;
+            font-size: 0.9rem;
+        }
+       </style>
+       </head>
+       <body>
+       <header>
+        <h1>WORAPONG YUPRAJAM</h1>
+        <p></p>
+            <nav>
+            <a href="#about">about me</a>
+            <a href="#portfolio">portfolio</a>
+            <a href="#contact">contact</a>
+        </nav>
+    </header>
+    <!-- Section: About -->
+    <section id="about">
+        <h2 class="section-title">เกี่ยวกับฉัน</h2>
+        <div class="about">
+        <img src="m.jpg" alt="Profile">
+               <p>
+               <strong>ชื่อ</strong> นาย วรพงศ์ อยู่ประจำ อายุ20ปี<br>
+       <div class="education-header">ประวัติการศึกษา</div>
+    <table>
+      <thead>
+        <tr>
+          <th>ระดับ</th>
+          <th>สถานศึกษา</th>
+          <th>ปีที่จบการศึกษา</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ประถมศึกษา</td>
+          <td>โรงเรียนเพ็ญพัฒนา</td>
+          <td>2560</td>
+        </tr>
+        <tr>
+          <td>มัธยมศึกษาต้น</td>
+          <td>โรงเรียนเพ็ญพัฒนา</td>
+          <td>2563</td>
+        </tr>
+        <tr>
+          <td>ปวช.</td>
+          <td>วิทยาลัยเทคนิคลพบุรี</td>
+          <td>2567</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+    </section>
+    <!-- Section: Portfolio -->
+    <section id="portfolio">
+        <h2 class="section-title">ผลงาน</h2>
+        <div class="portfolio-grid">
+            
+            <!-- ⬇⬇⬇ เพิ่มผลงานโดยการคัดลอก block ด้านล่างนี้ ⬇⬇⬇ -->
+            <div class="portfolio-item">
+               <img src="pyt.png" alt="ชื่อผลงาน">
+               <a href="https://www.youtube.com/watch?v=WJ7IOVljmjc" target="_blank">youtube.com/net.worapong.ch</a>
+                <h3>VLOG.001</h3>
+                <p>คริปตัดต่อด้วยมือถือ!!!</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="APC_0120.jpg" alt="ชื่อผลงาน">
+                <a href="https://www.instagram.com/strawberry_milk_500/?igsh=NmVybXV3YTZ1bmJz&utm_source=qr" target="_blank">strawberry_milk_500</a>
+                <h3>Instagram สำหรับลงรูปถ่าย</h3>
+                <p>ลงรูปถ่ายกับวีดิโอ สามารถติดตามเพื่อชมผลงานได้ครับ</p>
+            </div>
+                    </div>
+    </section>
+
+    <!-- Section: Contact -->
+    <section id="contact">
+        <h2 class="section-title">ติดต่อ</h2>
+        <div class="contact">
+              
+      <strong>เบอร์โทรศัพท์</strong> 096-903-9932<br>
+      <strong>E-Mail</strong> net522548@gmail.com<br>
+      <strong>Facebook</strong> <a href="https://www.facebook.com/net.worapong" target="_blank">facebook.com/net.worapong.ch</a>
+
+    </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 WORAPONG | All rights reserved.
+    </footer>
+
+</body>
+</html>
